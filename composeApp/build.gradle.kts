@@ -34,6 +34,22 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
+
+            implementation(projects.coreNetwork)
+            implementation(projects.coreDatabase)
+
+            implementation(projects.search.data)
+            implementation(projects.search.domain)
+            implementation(projects.search.ui)
+
+            implementation(projects.favorite.data)
+            implementation(projects.favorite.domain)
+            implementation(projects.favorite.ui)
+
+            implementation(projects.game.data)
+            implementation(projects.favorite.domain)
+            implementation(projects.favorite.ui)
+
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)
             implementation(libs.compose.material3)
