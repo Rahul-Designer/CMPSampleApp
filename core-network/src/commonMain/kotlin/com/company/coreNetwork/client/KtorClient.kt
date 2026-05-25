@@ -4,6 +4,10 @@ import io.ktor.client.HttpClient
 import io.ktor.client.plugins.DefaultRequest
 import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.client.plugins.logging.DEFAULT
+import io.ktor.client.plugins.logging.LogLevel
+import io.ktor.client.plugins.logging.Logger
+import io.ktor.client.plugins.logging.Logging
 import io.ktor.client.request.accept
 import io.ktor.http.ContentType
 import io.ktor.http.URLProtocol
@@ -19,8 +23,18 @@ object KtorClient {
         install(ContentNegotiation) {
             json(json = Json {
                 ignoreUnknownKeys = true
+                prettyPrint = true
+                isLenient = true
             })
         }
+//        install(Logging) {
+//            logger = object : Logger {
+//                override fun log(message: String) {
+//                    println("Ktor => $message")
+//                }
+//            }
+//            level = LogLevel.ALL
+//        }
 
         install(DefaultRequest) {
             url {
@@ -32,9 +46,9 @@ object KtorClient {
         }
 
         install(HttpTimeout) {
-            socketTimeoutMillis = 3000
-            connectTimeoutMillis = 3000
-            requestTimeoutMillis = 3000
+            socketTimeoutMillis = 5000
+            connectTimeoutMillis = 5000
+            requestTimeoutMillis = 5000
         }
     }
 }

@@ -1,6 +1,6 @@
 package com.company.game.domain.useCases
 
-import com.company.game.domain.model.Game
+import com.company.common.domain.model.Game
 import com.company.game.domain.repository.GameRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO

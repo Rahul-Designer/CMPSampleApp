@@ -35,6 +35,8 @@ kotlin {
         }
         commonMain.dependencies {
             implementation(projects.game.domain)
+            implementation(projects.common.domain)
+            implementation(projects.common.ui)
 
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)

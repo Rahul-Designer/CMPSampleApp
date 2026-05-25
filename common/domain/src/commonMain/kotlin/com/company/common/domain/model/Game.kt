@@ -1,4 +1,4 @@
-package com.company.game.domain.model
+package com.company.common.domain.model
 
 data class Game(
     val id : Int,

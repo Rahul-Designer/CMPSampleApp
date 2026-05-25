@@ -2,7 +2,7 @@ package com.company.game.ui.game
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.company.game.domain.model.Game
+import com.company.common.domain.model.Game
 import com.company.game.domain.useCases.GetGameUseCases
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
