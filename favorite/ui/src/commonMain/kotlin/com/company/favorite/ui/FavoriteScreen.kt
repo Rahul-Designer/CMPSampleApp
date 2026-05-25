@@ -17,7 +17,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.isDebugInspectorInfoEnabled
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import cmpsampleapp.favorite.ui.generated.resources.Res
 import cmpsampleapp.favorite.ui.generated.resources.ic_arrow_back

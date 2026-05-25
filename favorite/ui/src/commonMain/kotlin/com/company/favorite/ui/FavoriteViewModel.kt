@@ -11,7 +11,6 @@ import kotlinx.coroutines.launch
 
 class FavoriteViewModel(
     private val getAllLocalCacheGameUseCase: GetAllLocalCacheGameUseCase,
-    private val upsertUseCase: UpsertUseCase,
     private val deleteUseCase: DeleteUseCase
 ) : ViewModel() {
 

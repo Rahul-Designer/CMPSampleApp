@@ -44,7 +44,7 @@ fun SearchScreen(modifier: Modifier = Modifier, onClickDetail: (Int) -> Unit) {
     }
 
     SearchScreenContent(
-        modifier = Modifier,
+        modifier = modifier,
         uiState = uiState,
         query = query,
         onQueryChange = {
@@ -66,7 +66,7 @@ fun SearchScreenContent(
     onQueryChange: (String) -> Unit,
     onClickDetail: (Int) -> Unit
 ) {
-    Scaffold(modifier = Modifier.fillMaxSize(), topBar = {
+    Scaffold(modifier = modifier.fillMaxSize(), topBar = {
         TopAppBar(title = {
             TextField(
                 value = query,
