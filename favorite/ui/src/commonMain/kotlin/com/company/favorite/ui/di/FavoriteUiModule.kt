@@ -10,7 +10,6 @@ fun getFavoriteUiModule() : Module {
         viewModel {
             FavoriteViewModel(
                 getAllLocalCacheGameUseCase = get(),
-                upsertUseCase = get(),
                 deleteUseCase = get(),
             )
         }
